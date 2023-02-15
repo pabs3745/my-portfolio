@@ -4,49 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,800;1,200&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Pablo´s Portfolio</title>
 </head>
 <body>
     <!-- Navbar section  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid contenedor">
             <a class="navbar-brand" href="#">PC</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Studies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Me</a>
-                    </li>   
-                </ul>
+            <div class="me-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#aboutme">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">examples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Me</a>
+                        </li>   
+                    </ul>
+                </div>
             </div>
+
         </div>
     </nav>
     <!-- End navbar section  -->
 
     <!-- Header section-->
     <header id="hero">
-        <div class="overlay">
+        <div class="overlay contenedor">
             <div class="container">
-                <div class="row">
-                    <div class="col text-center">
+                <div class="row align-middle">
+                    <div class="col text-center align-middle">
                         <!-- <div class="card"> -->
-                            <h2 class="card-header">Pablo Colombo</h2>
+                            <h1 class="card-header display-1">Pablo Colombo</h1>
                             <div class="card-body">
-                              <h5 class="card-title">CCNA Certified and fullstack web developer</h5>
-                              <p class="card-text">I´m a fresh BSc Computing and IT graduate with the Open University and CCNA certified by Cisco<br>
+                              <h5 class="card-title">Cisco CCNA Certified and fullstack web developer</h5>
+                              <p class="card-text text-muted">I´m a soon-to-be BSc Computing and IT graduate with the Open University and a Cisco Certified Network Associate.<br>
                               I am eager to bring my technical knowledge and skills to a challenging and dynamic workplace.<br>
-                              I am passionate about using technology to solve complex problems and drive innovation</p>
-                              <a href="#" class="btn btn-primary">Check out some of my web development examples</a>
+                              I am passionate about using technology to solve complex problems and drive innovation.</p>
+                              <a href="#" class="btn btn-light btn-outline-success">Check out some of my web development examples</a>
                             </div>
                           <!-- </div> -->
                     </div>
@@ -55,6 +64,51 @@
         </div>
     </header>
 
+    <!-- About me section-->
+    <section id="aboutme" class="mt-5">
+        <div class="container contenedor">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            My passion for technology and desire to continuously learn and grow 
+                            led me to pursue a degree in computer science.<br> As I near graduation, 
+                            I am excited to apply my newfound technical knowledge and passion 
+                            for the field to a new career opportunity.<br><br>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item text-center">Some relevant modules:</li>
+                          <li class="list-group-item">Object oriented programming</li>
+                          <li class="list-group-item">Algorithm analysis using Python</li>
+                          <li class="list-group-item">Machine learning and artificial intelligence</li>
+                          <li class="list-group-item">Web, mobile and cloud technologies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            The CCNA certification proves that I have the knowledges to navigate the ever-changing
+                             landscape of IT and that I acquired the skills required to manage and optimize today's most advanced networks. 
+                             The CCNA exam covers networking fundamentals, IP services, 
+                             security fundamentals, automation and programmability.
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item text-center">Some of the skills I have acquired through CCNA certification:</li>
+                          <li class="list-group-item">Protocols like OSPF, EIGRP, Spanning Tree and many more</li>
+                          <li class="list-group-item">Core routing and switching fundamentals</li>
+                          <li class="list-group-item">Design, implement and monitor LANs, VLANs, WANs</li>
+                          <li class="list-group-item">Troubleshoot and security of network access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Examples section-->
+    
 
     
     <script src="./scripts/bootstrap.js"></script>

@@ -1,0 +1,125 @@
+/* GLOBALS */
+/** configuracion de pixeles y rems */
+/* 1rem = 10px */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;       /* paul irish border box */
+    scroll-snap-type: y mandatory;  /* para hacer un snap scroll a una seccion. Va con otro snippet mas adelante */
+}
+*, *:before, *:after {      /*paul irish box sizing */
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #000C66;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #000C66;
+}
+
+.btn:hover {
+    background-color: #7EC8E3;
+
+}
+
+/* NavBar */
+
+.navbar {
+    background-color: #000C66;
+    border-bottom: #7EC8E3 solid .8em;
+
+}
+
+.navbar-brand {
+    color: #7EC8E3 !important;
+    font-size: 4em;
+}
+
+.navbar-brand:hover {
+    color: #fff !important;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color:#7EC8E3 !important;
+    font-size: 2em;
+    margin-right: 2em;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    background-color: #7EC8E3;
+}
+
+
+/* Hero */
+#hero {
+    height: 100vh;;
+}
+
+.card-header {
+    color: #fff;
+    font-size: 7em;
+    margin-top: 25%;
+    font-weight: 700;
+}
+
+.card-title {
+    color: #fff;
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.card-text {
+    color: #fff !important;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.5em;
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: justify;
+    padding: .4em;
+}
+
+.card-body .btn {
+    margin-top: 2em;
+}
+
+/* About me section */
+#aboutme {
+    margin-bottom: 2rem;
+}
+#aboutme .card-header {
+    color: #fff;
+    background-color: #000C66;
+    margin-top: 0;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2em;
+    text-align: justify;
+
+}
+
+.list-group {
+    border-top: #fff solid .15rem !important;
+}
+
+.list-group-item {
+    background-color: #000C66;
+    color: #fff;
+    font-size: 1.5rem;
+}
