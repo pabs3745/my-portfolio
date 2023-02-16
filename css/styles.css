@@ -32,6 +32,24 @@ body {
 
 }
 
+h2 {
+    color: #7EC8E3;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: #7EC8E3;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
 /* NavBar */
 
 .navbar {
@@ -122,4 +140,84 @@ body {
     background-color: #000C66;
     color: #fff;
     font-size: 1.5rem;
+}
+
+/* Gallery */
+#gallery {
+    margin-top: 5rem;
+}
+
+#gallery .col-md-4 {
+    padding-left: 0;
+
+}
+
+.galleryRow {
+    margin-bottom: 2rem;
+}
+
+.imageContainer {
+    position: relative;
+    /* cursor: pointer; */
+}
+
+.imgOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 0, 26);
+    opacity: 0;
+}
+
+.imageContainer:hover .imgOverlay{
+    opacity: .5;
+}
+
+.imgText {
+    /* position: absolute; */
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.imgText h4 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* .imgText a {
+    text-decoration: none;
+    color: #7EC8E3;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.imgText a:hover {
+    color: #fff;
+    cursor: pointer;
+} */
+
+/* Footer */
+#footer {
+    background-color: #000;
+}
+
+.first p {
+    color: #7EC8E3;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer-img {
+    width: 10%;
+    height: auto;
+}
+
+/* Desciption */
+.description {
+    background-color: #000C66;
 }
